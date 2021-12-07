@@ -1,0 +1,570 @@
+@import url("https::/fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    color: white;
+    background: url(https://flex.com/resources/-/media/Project/Flex/BrandSite/resource-gallery/case-studies/570X275/mass-prod-header.jpg?revision=c4936deb-1f38-43ed-926d-1922a8b94cef)
+    top 12% center no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(34, 40, 49);
+    background-size: cover;
+}
+header,
+nav,
+section,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section {
+    width: 100%;
+    /* min-height: 110vh; */
+}
+p, ol, li {
+    line-height: 150%;
+}
+/*=====Menu=====*/
+header {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em 3em;
+    background: #161a20;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+    height: 12%;
+    /* min-height: 100px; */
+}
+#logo,
+#logo-ref {
+    height: 100%;
+    transition: 0.2s;
+}
+#logo:hover {
+    transform: scale(1.2);
+}
+nav {
+    height: 80%;
+    justify-content: space-between;
+    width: 65%;
+}
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-width: 10%;
+    min-width: 170;
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0.3em;
+    transition: 0.3s;
+    line-height: 150%;
+}
+nav a:hover {
+    border: 1px solid #ec34af;
+}
+/*==== Main info ====*/
+.main-page {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 70vw;
+}
+#hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+.title {
+    width: 35%;
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
+    background:rgba(34, 40, 49, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+
+.title:hover {
+    transform: scale(1.05);
+    background: rgba(160, 20, 130, 0.671);
+}
+/*=====Карточки и анимации=====*/
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 40%;
+}
+.card-1,
+.card-2,
+.card-3,
+.card-proc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background:rgba(34, 40, 49, 1);
+    font-size: 22px;
+    font-weight: 100;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    text-align: center;
+    width: 28vw;
+    height: 20vw;
+    transition: 0.2s;
+}
+.card-1 {
+    background: url(https://trashbox.ru/files/1104682_e1ac29/1.jpg) center center;
+    background-size: cover;
+}
+.card-2 {
+    background: url(https://fcinfo.ru/uploads/posts/2018-10/1538917843_ytr18.jpg) center center;
+    background-size: cover;
+}
+.card-3 {
+    background: url(https://33.img.avito.st/image/1/rKx3jraBAEUBK_JDI_TJl5ctBEPVLQBDsk4EQwEr8kPBKQxBwS8AAQ) center center;
+    background-size: cover;
+}
+.card-1:hover,
+.card-2:hover,
+.card-3:hover,
+.card-proc:hover {
+    transform: translateY(-15px);
+}
+
+.text-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.4s;
+    border-radius: 25px;
+}
+.card-1:hover .text-card,
+.card-2:hover .text-card,
+.card-3:hover .text-card,
+.card-proc:hover .text-card{
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0.9;
+}
+/*===== Информация на главной странице ======*/
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vw;
+}
+.about {
+    width: 90%;
+    min-height: 27%;
+    background-color: #161a20;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.text {
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding-right: 3%;
+}
+/*===== Изображения разделов процессоров ======*/
+#AMDproc,
+#IntelProc,
+#MobileProc {
+    border-radius: 25px;
+    width: 28%;
+    height: 100%;
+    background: url("https://pbs.twimg.com/media/E8dBUgbXsAAD3ZC.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#IntelProc {
+    background: url("https://newsroom.intel.com/wp-content/uploads/sites/11/2019/07/10thGen_Chip-on-Motherboard.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#MobileProc {
+    background: url("https://images11.popmeh.ru/upload/img_cache/1ce/1ceda078b04c43ddf2dcd3a9a2e1150f_ce_1160x618x0x17_cropped_1332x888.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+/*===== Кнопка возврата наверх ======*/
+#toTop,
+#toTopHover {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:2%;
+	left:1%;
+	overflow:hidden;
+	width:64px;
+	height:64px;
+	border:none;
+	text-indent:100%;
+	background:url(images/up-arrow.png) no-repeat left top;
+}
+
+#toTop:active, #toTop:focus {
+	outline:none;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #161a20;
+    padding: 3em;
+}
+
+
+/*===== Страница процессоров AMD =====*/
+#main-page-proc {
+    height: 50vw;
+    margin-top: 6vw;
+}
+#contentAMD { 
+    flex-wrap: wrap; 
+    height: 100vh;
+    justify-content: space-evenly;
+}
+.content-container {
+    background-color: #161a20;;
+    width: 80%;
+    border-radius: 25px;
+    /* min-height: 50vh; */
+}
+#AMDphoto {
+    float: left;
+    margin: 2%;
+    border: 3px outset rgb(135, 48, 216);
+}
+.aboutProc {
+    padding: 2%;
+}
+#list{
+    padding: 0;
+    margin-left: 25px;
+}
+
+#amd-1 {
+    background: url(https://www.ixbt.com/img/n1/news/2019/11/2/423423_large.jpg) center center;
+    background-size: cover;
+}
+#amd-2 {
+    background: url(https://www.cgdirector.com/wp-content/uploads/media/2020/03/IMG_3045.jpg) center center;
+    background-size: cover;
+}
+#amd-3 {
+    background: url(https://www.ixbt.com/img/n1/news/2021/4/0/Ryzen-9-5900X-1-2048x1202_large.jpg) center center;
+    background-size: cover;
+}
+#amd-4 {
+    background: url(https://images.ctfassets.net/n2eibog5sv5g/4Pqktvw2gAbhDhBaN/527e5d85edb52df8bf6ffb2e3304f91d/ryzen_1200x600-original-original.jpg) right -10% center;
+    background-size: cover;
+}
+#amd-5 {
+    background: url(https://cyrez.ru/files/products/dda1f833-cc0d-11e9-a304-005056b206a1-1163694.800x600w.jpg) center center;
+    background-size: cover;
+}
+#amd-6 {
+    background: url(https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/617377_cezanne_5000series_01_0004_4K.png) center center;
+    background-size: cover;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+    text-align: left; 
+}
+table th {
+	font-weight: bold;
+
+    text-align: left;
+}
+table td {
+	border: 1px solid #dddddd;
+
+    text-align: left;
+}
+/*===== Страница процессоров Intel =====*/
+#intel-1 {
+    background: url(https://static.price.ru/images/models/-/processor/intel-xeon-platinum-8180/1d8c17e67b79f25052f8fe9627662e07.JPEG) center center;
+    background-size: cover;
+}
+#intel-2 {
+    background: url(https://digital-tex.ru/upload/resize_cache/iblock/634/400_400_140cd750bba9870f18aada2478b24840a/6341ad2db4889504333fe168ce26892e.jpg) center top;
+    background-size: cover;
+}
+#intel-3 {
+    background: url(https://overclockers.ru/st/legacy/blog/405881/279295_O.jpeg) left -42% center;
+    background-size: cover;
+}
+#intel-4 {
+    background: url(https://st.overclockers.ru/images/lab/2021/04/08/01/199_11700k_in_socket_big.jpg) center center;
+    background-size: cover;
+}
+#intel-5 {
+    background: url(https://items.s1.citilink.ru/1592877_v01_b.jpg) center top 8%;
+    background-size: cover;
+}
+/* ===== Страница процессоров Qualcomm =====*/
+#qualcomm-1 {
+    background: url(https://4apk.ru/wp-content/uploads/2017/06/qualcomm-snapdragon-450-2017-chip.png) center center;
+    background-size: cover;
+}
+#qualcomm-2 {
+    background: url(https://i1.rozetka.ua/goods/961979/xiaomi_redmi_note4x_3_32_blue_eu_review_images_961979455.jpg) center center;
+    background-size: cover;
+}
+#qualcomm-3 {
+    background: url(https://boomroom.webasyst.cloud/wa-data/public/shop/img/9t2.jpg) center center;
+    background-size: cover;
+}
+#qualcomm-4 {
+    background: url(https://avatars.mds.yandex.net/get-zen_doc/198002/pub_5a338f93830905958b6dc468_5a338ffaa815f165ec17541c/scale_1200) center center;
+    background-size: cover;
+}
+#qualcomm-5 {
+    background: url(https://images11.popmeh.ru/upload/img_cache/ebf/ebfd500a6dd7ae535b2c0fe8c2a5065d_ce_1160x618x0x141_cropped_1160x607.jpg) center center;
+    background-size: cover;
+}
+
+/* ====== Адаптация сайта на различные устройства =====*/
+@media screen and (min-width: 480px) and (max-width: 600px)  {
+    header {
+        height: 7%;
+    }
+    .main-page {
+        height: 80vw;
+        margin-top: 8vw;
+    }
+    #main-page-proc {
+        height: 95vw;
+        margin-top: 10vw;
+    }
+    .main-content {
+        height: 100vw;
+    }
+    #contentAMD {
+        height: 70vw;
+    }
+    .content-container {
+        border-radius: 10px;
+    }
+    #AMDphoto {
+        width: 45%;
+    }
+    .title {
+        font-size: 24px;
+    }
+    body {
+        font-size: 6px;
+    }
+    h2 {
+        font-size: 10px;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-proc {
+        font-size: 6px;
+        border-radius: 10px;
+    }
+    .text-card {
+        border-radius: 10px;
+    }
+    
+}
+@media screen and (min-width: 600px) and (max-width: 768px)  {
+    header {
+        height: 8vw;
+    }
+    .main-page {
+        height: 85vw;
+    }
+    #main-page-proc {
+        height: 85vw;
+        
+    }
+    .main-content {
+        height: 100vw;
+    }
+    #contentAMD {
+        height: 70vw;
+    }
+    .content-container {
+        border-radius: 10px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    body {
+        font-size: 8px;
+    }
+    h2 {
+        font-size: 12px;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-proc {
+        font-size: 8px;
+        border-radius: 15px;
+    }
+    .aboutProc {
+        height: max-content;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-content {
+        height: 100vw;
+    }
+    #contentAMD {
+        height: 80vw;
+    }
+    .content-container {
+        border-radius: 15px;
+    }
+    .main-page {
+        height: 90vw;
+        margin-top: 8vw;
+    }
+    #main-page-proc {
+        height: 90vw;
+        margin-top: 8vw;
+    }
+    header {
+        height: 8vw;
+    }
+    .title {
+        font-size: 34px;
+    }
+    body {
+        font-size: 10px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-proc {
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    header {
+        height: 8vw;
+    }
+    .main-page,
+    #main-page-proc {
+        height: 90vw;
+        margin-top: 8%;
+    }
+    
+    .main-content {
+        height: 100vw;
+    }
+    #contentAMD {
+        height: 70vw;
+    }
+    .title {
+        font-size: 40px;
+    }
+    body {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-proc {
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1440px){
+    .main-page,
+    #main-page-proc {
+        margin-top: 7%;
+        height: 75vw;
+    }
+    #contentAMD {
+        height: 60vw;
+    }
+    .main-content {
+        height: 90vw;
+    }
+    
+    .title {
+        font-size: 44px;
+    }
+    body {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-proc {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1440px) and (max-width: 1800px){
+    .main-page {
+        height: 85vw;
+        margin-top: 8%;
+    }
+    #main-page-proc {
+        height: 90vw;
+    }
+    .title {
+        font-size: 56px;
+    }
+    body {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-proc {
+        font-size: 18px;
+    }
+}
