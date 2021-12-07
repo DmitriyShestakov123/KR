@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initail-scale=1.0">
+    <title>Современные процессоры</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link type="image/x-icon" rel="shortcut icon" href="images/processor.png">
+</head>
+<body>
+    <header>
+        <a id="logo-ref" href="#"><img id="logo" 
+        src="images/processor.png" alt="Logo"></a>
+        <nav>
+            <a href="webMain.html" >Главная</a>
+            <a href="webIntel.html">Процессоры Intel</a>
+            <a href="#" >Процессоры AMD</a>
+            <a href="webQualcomm.html">Процессоры Qualcomm</a>
+            <a href="webSamsung.html">Процессоры Samsung</a>
+        </nav>
+    </header>
+    <section class="main-page" id="MpageAMD">
+        <div id="hero-section">
+            <div class="title">Процессоры AMD</div>
+            <div class="content-container">
+                <img  id="AMDphoto" src="https://a.allegroimg.com/s512/11a49d/e76005d24f8b94e0043845a6043f/PROCESOR-AMD-RYZEN-5-3600-3-6-GHZ-AM4-BOX-Liczba-rdzeni-procesora-6" width="25%">
+                <div class="aboutProc">
+                    <h2>Архитектура</h2><br>
+                    <p>
+                        В новых процессорах были сделаны большие изменения, которые повлекли за собой
+                        производительность и совместимость со старыми платформами.
+                        В AMD были добавлены режимы совместимости и 64-битные адресные регистры. 
+                        Они позволяют расширить адресуемое пространство оперативной памяти и 
+                        избавиться от существующего ограничения в 4 Гб, 
+                        которое создает ощутимые трудности при построении систем обработки информации. 
+                        Для ускорения работы с памятью используется технология NUMA, позволяющая 
+                        работать напрямую с памятью, минуя системную шину и набор микросхем. 
+                        Такое нововведение было названо HyperTransport и появилось в первом 
+                        чипсете Golem.
+                    </p><br>
+                    <h2>Технология</h2><br>
+                    <p>
+                        В то время как Intel придерживается стандарта EPIC 
+                        (Explicitly Parallel Instruction Computing).
+                        AMD избрал иной путь к 64-разрядности. 
+                        Производители прибавили 32 к уже имеющимся разрядам и 
+                        получили новую архитектуру x86-64. 
+                        Новая технология отличается от старой лишь префиксом 64. 
+                        В новом процессоре был сделан ряд улучшений, в первую очередь ядра процессора. Это позволило получить новый уровень быстродействия как для 32, так и для 64-разрядных систем.
+                    </p><br>
+                    <h2>Совместимость</h2>
+                    <p>
+                        Для улучшения производительности со старыми платформами были придуманы специальные режимы.
+                        Архитектура AMD 64 предусматривает два главных режима работы: Long и Legacy. 
+                        В первом открываются все достоинства технологии x86-64. 
+                        Для полной совместимости над старыми приложениями существует подрежим совместимости, 
+                        в котором способны обрабатываться 32/16-разрядные инструкции. 
+                        В режиме Legacy процессор работает по принципу обычной x86-архитектуры. 
+                        Преимуществом такой системы режимов является то, 
+                        что процессор можно эксплуатировать до выхода стабильных релизов 64-разрядных 
+                        операционных систем. Помимо этого существует несколько преимуществ x86-64 над IA-64:
+                        <ol id="list">
+                            <li>Быстродействие в обработке 32-разрядных инструкций. Связано с тем, что после перехода 
+                                в режим совместимости не происходит никакой эмуляции, процессор обрабатывает данные с 
+                                большой скоростью. Этого нет в Itanium, поскольку там все инструкции выполняются в 64 разрядах.
+                            </li>
+                            <li>Полная совместимость с x86-архитектурой. В Itanium подобное реализовано не полностью.
+                            </li>
+                            <li>Одновременная работа 16/32/64 приложений. Благодаря введению режимов, 
+                                становится возможным обрабатывать ряд разных инструкций одновременно.
+                            </li>
+                        </ol>
+                        Это сказывается на производительности и улучшает совместимость.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-content" id="contentAMD" style="flex-direction: row; ">
+        <div class="card-proc" id="amd-1">
+            <div class="text-card">
+                <h2>AMD EPYC 7763</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Год выхода</th>
+                            <th>2021</th>
+                        </tr>
+                        <tr>
+                            <th>Сокет</th>
+                            <th>SP3</th>
+                        </tr>
+                        <tr>
+                            <th>Техпроцесс</th>
+                            <th>7 nm</th>
+                        </tr>
+                        <tr>
+                            <th>Ядер/потоков</th>
+                            <th>64/128</th>
+                        </tr>
+                        <tr>
+                            <th>Частота</th>
+                            <th>2450 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>TurboCore</th>
+                            <th>3500 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L1, kb</th>
+                            <th>64x32 + 64x32</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L2, kb</th>
+                            <th>64x512</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L3, kb</th>
+                            <th>262144</th>
+                        </tr>
+                        <tr>
+                            <th>Контроллер ОЗУ</th>
+                            <th>8-канальный DDR4-3200</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-proc" id="amd-2">
+            <div class="text-card">
+                <h2>AMD Ryzen Threadripper 3990X</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Год выхода</th>
+                            <th>2020</th>
+                        </tr>
+                        <tr>
+                            <th>Сокет</th>
+                            <th>sTRX4</th>
+                        </tr>
+                        <tr>
+                            <th>Техпроцесс</th>
+                            <th>7 nm</th>
+                        </tr>
+                        <tr>
+                            <th>Ядер/потоков</th>
+                            <th>64/128</th>
+                        </tr>
+                        <tr>
+                            <th>Частота</th>
+                            <th>2900 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>TurboCore</th>
+                            <th>4300 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L1, kb</th>
+                            <th>64x32 + 64x32</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L2, kb</th>
+                            <th>64x512</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L3, kb</th>
+                            <th>262144</th>
+                        </tr>
+                        <tr>
+                            <th>Контроллер ОЗУ</th>
+                            <th>4-канальный DDR4-3200</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-proc"  id="amd-3">
+            <div class="text-card">
+                <h2>AMD Ryzen 9 5900X</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Год выхода</th>
+                            <th>2020</th>
+                        </tr>
+                        <tr>
+                            <th>Сокет</th>
+                            <th>AM4</th>
+                        </tr>
+                        <tr>
+                            <th>Техпроцесс</th>
+                            <th>7 nm</th>
+                        </tr>
+                        <tr>
+                            <th>Ядер/потоков</th>
+                            <th>12/24</th>
+                        </tr>
+                        <tr>
+                            <th>Частота</th>
+                            <th>3700 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>TurboCore</th>
+                            <th>4800 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L1, kb</th>
+                            <th>12x32 + 12x32</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L2, kb</th>
+                            <th>12x512</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L3, kb</th>
+                            <th>65536</th>
+                        </tr>
+                        <tr>
+                            <th>Контроллер ОЗУ</th>
+                            <th>2-канальный DDR4-3200</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-proc" id="amd-4">
+            <div class="text-card">
+                <h2>AMD Ryzen 7 5700G</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Год выхода</th>
+                            <th>2021</th>
+                        </tr>
+                        <tr>
+                            <th>Сокет</th>
+                            <th>AM4</th>
+                        </tr>
+                        <tr>
+                            <th>Техпроцесс</th>
+                            <th>7 nm</th>
+                        </tr>
+                        <tr>
+                            <th>Ядер/потоков</th>
+                            <th>8/16</th>
+                        </tr>
+                        <tr>
+                            <th>Частота</th>
+                            <th>3800 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>TurboCore</th>
+                            <th>4600 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L1, kb</th>
+                            <th>8x32 + 8x32</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L2, kb</th>
+                            <th>8x512</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L3, kb</th>
+                            <th>16384</th>
+                        </tr>
+                        <tr>
+                            <th>iGPU</th>
+                            <th>Radeon RX Vega 8</th>
+                        </tr>
+                        <tr>
+                            <th>Контроллер ОЗУ</th>
+                            <th>2-канальный DDR4-3200</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-proc" id="amd-5">
+            <div class="text-card">
+                <h2>AMD Ryzen 5 3600X</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Год выхода</th>
+                            <th>2019</th>
+                        </tr>
+                        <tr>
+                            <th>Сокет</th>
+                            <th>AM4</th>
+                        </tr>
+                        <tr>
+                            <th>Техпроцесс</th>
+                            <th>7 nm</th>
+                        </tr>
+                        <tr>
+                            <th>Ядер/потоков</th>
+                            <th>6/12</th>
+                        </tr>
+                        <tr>
+                            <th>Частота</th>
+                            <th>3800 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>TurboCore</th>
+                            <th>4400 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L1, kb</th>
+                            <th>6x32 + 6x32</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L2, kb</th>
+                            <th>6x512</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L3, kb</th>
+                            <th>32768</th>
+                        </tr>
+                        <tr>
+                            <th>Контроллер ОЗУ</th>
+                            <th>2-канальный DDR4-3200</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-proc" id="amd-6">
+            <div class="text-card">
+                <h2>AMD Ryzen 9 5900HS</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Год выхода</th>
+                            <th>2021</th>
+                        </tr>
+                        <tr>
+                            <th>Сокет</th>
+                            <th>FP6</th>
+                        </tr>
+                        <tr>
+                            <th>Техпроцесс</th>
+                            <th>7 nm</th>
+                        </tr>
+                        <tr>
+                            <th>Ядер/потоков</th>
+                            <th>8/16</th>
+                        </tr>
+                        <tr>
+                            <th>Частота</th>
+                            <th>3000 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>TurboCore</th>
+                            <th>4600 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L1, kb</th>
+                            <th>8x32 + 8x32</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L2, kb</th>
+                            <th>8x512</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L3, kb</th>
+                            <th>16384</th>
+                        </tr>
+                        <tr>
+                            <th>iGPU</th>
+                            <th>Radeon RX Vega 8</th>
+                        </tr>
+                        <tr>
+                            <th>Контроллер ОЗУ</th>
+                            <th>4-канальный DDR4-4266</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer>2021&copy; Student MIREA. ALL RIGHT RESERVED</footer>
+    <!--Плагин jquery -->	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/jquery.ui.totop.js" type="text/javascript"></script>
+	<!-- Старт плагина -->
+	<script type="text/javascript" async>
+		$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+</body>
+</html>
