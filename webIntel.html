@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initail-scale=1.0">
+    <title>Современные процессоры</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link type="image/x-icon" rel="shortcut icon" href="images/processor.png">
+</head>
+<body>
+    <header>
+        <a id="logo-ref" href="#"><img id="logo" 
+        src="images/processor.png" alt="Logo"></a>
+        <nav>
+            <a href="index.html" >Главная</a>
+            <a href="#">Процессоры Intel</a>
+            <a href="webAMD.html" >Процессоры AMD</a>
+            <a href="webQualcomm.html">Процессоры Qualcomm</a>
+            <a href="webSamsung.html">Процессоры Samsung</a>
+        </nav>
+    </header>
+    <section class="main-page" id="main-page-proc">
+        <div id="hero-section">
+            <div class="title">Процессоры Intel</div>
+            <div class="content-container">
+                <img  id="AMDphoto" src="https://a.allegroimg.com/original/1156ee/b12017fd4a0b9b94ef208536ee26/Laptop-Lenovo-IdeaPad-3-15-6-8GB-256GB-INTEL-GOLD-Wielkosc-pamieci-RAM-8-GB" 
+                width="25%" style="border-color: rgb(16, 118, 252); float: right;">
+                <div class="aboutProc">
+                    <h2>Архитектура</h2><br>
+                    <p>
+                        Из-за интенсивного пути развития, компания в корне поменяла архитектуру.
+                        <ol id="list">
+                            <li>Режимы совместимости со старыми платформами.</li>
+                            <li>Уменьшение количества ошибок, так как против них созданы две независимых технологии. 
+                                Главной является EMCA, которая позволяет вести контроль и протоколирование всех ошибок, 
+                                возникающих во время работы процессора. И второстепенная технология ECC, 
+                                позволяющая предварительно обрабатывать код и вести контроль четности.</li>
+                            <li>Поддержка многопроцессорности. 
+                                Так как компания Intel ориентировала свой процессор для крупных серверов, 
+                                то позаботилась и о мультипроцессорности. Процессор был снабжен рядом микросхем, 
+                                которые позволяют вести быстрый обмен с памятью. Теперь для работы с «мозгами» 
+                                используются методы чередования, буферизации и деления модулей памяти. 
+                                При этом процессор работает с 64 гигабайтами оперативки с пропускной способностью 4,2 Гб/сек.</li>
+                        </ol>
+                    </p><br>
+                    <h2>Технология</h2><br>
+                    <p>
+                        Intel придерживаетсястандарта EPIC (Explicitly Parallel Instruction Computing). 
+                        Данная технология создавалась специально для крупных серверов и некоторых рабочих станций. 
+                        Возможности EPIC огромны: во-первых, это высокая скорость выполнения операций 
+                        с плавающей запятой. Во-вторых, поддержка распараллеливания. И, в-третьих, 
+                        благодаря улучшению считывания данных из памяти, скорость обмена информацией резко возрастает.
+                    </p><br>
+                    <h2>Совместимость</h2><br>
+                    <p>
+                        Intel создал ряд регистров для полной совместимости старых приложений.
+                        В итоге получается, что все 64-разрядные инструкции выполняются как обычно, 
+                        иные же обрабатываются технологией IA-32. Эмуляция есть эмуляция, 
+                        никакой производительности при этом не происходит, 
+                        поэтому Itanium целиком и полностью ориентирован для 64-разрядных платформ.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-content" id="contentAMD" style="flex-direction: row; ">
+        <div class="card-proc" id="intel-1">
+            <div class="text-card">
+                <h2>Intel Xeon Platinum 8380</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Год выхода</th>
+                            <th>2021</th>
+                        </tr>
+                        <tr>
+                            <th>Сокет</th>
+                            <th>LGA4189</th>
+                        </tr>
+                        <tr>
+                            <th>Техпроцесс</th>
+                            <th>10 nm</th>
+                        </tr>
+                        <tr>
+                            <th>Ядер/потоков</th>
+                            <th>40/80</th>
+                        </tr>
+                        <tr>
+                            <th>Частота</th>
+                            <th>2300 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>TurboCore</th>
+                            <th>3400 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L1, kb</th>
+                            <th>40x32 + 40x32</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L2, kb</th>
+                            <th>40x1024</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L3, kb</th>
+                            <th>61440</th>
+                        </tr>
+                        <tr>
+                            <th>Контроллер ОЗУ</th>
+                            <th>8-канальный DDR4-3200</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-proc" id="intel-2">
+            <div class="text-card">
+                <h2>Intel Xeon Gold 6348</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Год выхода</th>
+                            <th>2021</th>
+                        </tr>
+                        <tr>
+                            <th>Сокет</th>
+                            <th>LGA4189</th>
+                        </tr>
+                        <tr>
+                            <th>Техпроцесс</th>
+                            <th>10 nm</th>
+                        </tr>
+                        <tr>
+                            <th>Ядер/потоков</th>
+                            <th>28/56</th>
+                        </tr>
+                        <tr>
+                            <th>Частота</th>
+                            <th>2600 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>TurboCore</th>
+                            <th>3500 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L1, kb</th>
+                            <th>28x32 + 28x32</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L2, kb</th>
+                            <th>28x1024</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L3, kb</th>
+                            <th>43008</th>
+                        </tr>
+                        <tr>
+                            <th>Контроллер ОЗУ</th>
+                            <th>8-канальный DDR4-3200</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-proc"  id="intel-3">
+            <div class="text-card">
+                <h2>Intel Core i9-12900K</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Год выхода</th>
+                            <th>2021</th>
+                        </tr>
+                        <tr>
+                            <th>Сокет</th>
+                            <th>LGA1700</th>
+                        </tr>
+                        <tr>
+                            <th>Техпроцесс</th>
+                            <th>10 nm</th>
+                        </tr>
+                        <tr>
+                            <th>Ядер/потоков</th>
+                            <th>16/24</th>
+                        </tr>
+                        <tr>
+                            <th>Частота</th>
+                            <th>2600 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>TurboCore</th>
+                            <th>5200 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L1, kb</th>
+                            <th>16x32 + 8x48</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L2, kb</th>
+                            <th>14336</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L3, kb</th>
+                            <th>30720</th>
+                        </tr>
+                        <tr>
+                            <th>Контроллер ОЗУ</th>
+                            <th>2-канальный DDR5-4800</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-proc" id="intel-4">
+            <div class="text-card">
+                <h2>Intel Core i7-11700K</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Год выхода</th>
+                            <th>2021</th>
+                        </tr>
+                        <tr>
+                            <th>Сокет</th>
+                            <th>LGA1200</th>
+                        </tr>
+                        <tr>
+                            <th>Техпроцесс</th>
+                            <th>14 nm</th>
+                        </tr>
+                        <tr>
+                            <th>Ядер/потоков</th>
+                            <th>8/16</th>
+                        </tr>
+                        <tr>
+                            <th>Частота</th>
+                            <th>3600 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>TurboCore</th>
+                            <th>5000 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L1, kb</th>
+                            <th>8x32 + 8x48</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L2, kb</th>
+                            <th>8x1280</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L3, kb</th>
+                            <th>16384</th>
+                        </tr>
+                        <tr>
+                            <th>Контроллер ОЗУ</th>
+                            <th>8-канальный DDR4-3200</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-proc" id="intel-5">
+            <div class="text-card">
+                <h2>Intel Core i5-12600K</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Год выхода</th>
+                            <th>2021</th>
+                        </tr>
+                        <tr>
+                            <th>Сокет</th>
+                            <th>LGA1700</th>
+                        </tr>
+                        <tr>
+                            <th>Техпроцесс</th>
+                            <th>10 nm</th>
+                        </tr>
+                        <tr>
+                            <th>Ядер/потоков</th>
+                            <th>10/16</th>
+                        </tr>
+                        <tr>
+                            <th>Частота</th>
+                            <th>2800 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>TurboCore</th>
+                            <th>4900 MHz</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L1, kb</th>
+                            <th>64x10</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L2, kb</th>
+                            <th>9728</th>
+                        </tr>
+                        <tr>
+                            <th>Кэш L3, kb</th>
+                            <th>20480</th>
+                        </tr>
+                        <tr>
+                            <th>Контроллер ОЗУ</th>
+                            <th>8-канальный DDR4-3200</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </section>
+    <footer>2021&copy; Student MIREA. ALL RIGHT RESERVED</footer>
+    <!--Плагин jquery -->	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/jquery.ui.totop.js" type="text/javascript"></script>
+	<!-- Старт плагина -->
+	<script type="text/javascript" async>
+		$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+</body>
+</html>
